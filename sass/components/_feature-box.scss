@@ -15,8 +15,8 @@
             to right,
             rgba($color-primary-light, 0.8), 
             rgba($color-primary-dark, 0.8));
-        background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
     }
 
