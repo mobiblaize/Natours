@@ -7,10 +7,33 @@
 }
 
 html {
-    // Defines 1rem
+    // Defines 1rem = 10px, 10/16px = 62.5%
     font-size: 62.5%;
+
+    @include respond(big-desktop) {
+        font-size: 75%;     //1rem = 12px, 12/16 = 75%
+    }
+
+    //Width < 1200?
+    @include respond(tab-land) {    //1 rem = 9px, 9/16px = 56.25%
+        font-size: 56.25%;
+    }
+
+    //Width < 900?
+    @include respond(tab-port) {    //1 rem = 8px, 8/16px = 50%
+        font-size: 50%;
+    }
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
 }
