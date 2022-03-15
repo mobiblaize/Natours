@@ -112,6 +112,7 @@
     }
 
     &__checkbox:checked ~ &__nav {
+        visibility: visible;
         opacity: 1;
         width: 100%;
     }

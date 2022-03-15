@@ -1382,6 +1382,7 @@ body {
   transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
+  visibility: visible;
   opacity: 1;
   width: 100%; }
 
